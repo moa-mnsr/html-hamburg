@@ -1,0 +1,22 @@
+body {
+    background-color: whitesmoke;
+}
+.page-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+pre, p {
+    font-family: monospace;
+}
+
+.energy {
+    background-color: lime;
+}
+
