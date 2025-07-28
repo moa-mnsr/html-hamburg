@@ -1,15 +1,16 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+html, body {
+    margin: 0;
     background-color: whitesmoke;
     text-align: center;
 }
 
+
 .page-container {
-  margin: clamp(1rem, 10vh, 4rem) 10vw;
+    margin: clamp(1rem, 10vh, 4rem) clamp(5vw, 10vw, 10vw);
 }
 
 div.info-box {
@@ -21,8 +22,8 @@ div.info-box {
     font-size: 5vw;
         font-family: monospace;
 
-
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -36,7 +37,7 @@ section {
 h1 {
   font-size: clamp(28px, 8vw, 48px);
   margin-top: clamp(1rem, 3vh, 4rem);
-  margin-bottom: clamp(3rem, 2vh, 1.5rem);
+  margin-bottom: clamp(1rem, 2vh, 3rem);
 }
 
   h2 {
@@ -48,13 +49,20 @@ h1 {
     font-size: clamp(16px, 2.5vw, 22px);
 }
 
+
 .otter pre {
     font-family: monospace;
-    /* This is the change: font-size now scales with the viewport width */
-    font-size: 1.5vh;
+font-size: clamp(0.3rem, 0.8vw, 0.5rem);
     text-align: center;
-    margin-top: clamp(1rem, 3vh, 2rem)
+    margin-top: clamp(1rem, 3vh, 2rem);
 }
+
+
+.otter pre,
+div.fish pre {
+    white-space: pre;
+}
+
 
 span.energy {
     background-color: lime;
@@ -62,17 +70,16 @@ span.energy {
 
 div.fish {
     text-align: center;
-    /* This is the other change: font-size scales with the viewport width */
-    font-size: .75vw;
+    font-size: clamp(0.2rem, 0.75vw, 0.4rem);
     padding: 1rem;
     background-color: black;
-     border: 2px lime dotted;
+    border: 2px lime dotted;
 }
 
 a.fish-tank {
    
-    text-decoration: none; /* Hides the link underline */
-    cursor: pointer;       /* Shows a pointer on hover */
+    text-decoration: none; 
+    cursor: pointer;
 }
 
 a.fish-tank:visited {
