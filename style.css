@@ -1,19 +1,41 @@
-body {
-    background-color: whitesmoke;
-}
-.page-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+    background-color: whitesmoke;
     text-align: center;
 }
 
-
-pre, p {
+p {
     font-family: monospace;
+}
+
+div.info-box {
+    border: solid 1px black;
+    padding: 2rem;
+}
+
+.weather {
+    font-size: 1rem;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+  font-size: clamp(24px, 8vw, 48px);
+}
+
+
+.otter pre {
+    font-family: monospace;
+    /* This is the change: font-size now scales with the viewport width */
+    font-size: 1vw;
+    text-align: center;
 }
 
 span.energy {
@@ -21,15 +43,14 @@ span.energy {
 }
 
 div.fish {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    font-size: .25rem;
+    text-align: center;
+    /* This is the other change: font-size scales with the viewport width */
+    font-size: .75vw;
     padding: 1rem;
-    border: 1px dotted lime;
+    background-color: black;
 }
 
-.fish {
+span.fish {
     color: lime;
-    background-color: black;
+
 }
