@@ -7,10 +7,7 @@ body {
     text-align: center;
 }
 
-p {
-    font-family: monospace;
-    font-size: 2vw;
-}
+
 
 div.info-box {
     border: solid 1px black;
@@ -30,9 +27,16 @@ main {
 }
 
 h1 {
-  font-size: clamp(24px, 8vw, 48px);
-}
+  font-size: clamp(28px, 8vw, 48px);}
 
+  h2 {
+        font-size: clamp(24px, 6vw, 38px);
+  }
+
+  p {
+    font-family: monospace;
+    font-size: clamp(16px, 2.5vw, 22px);
+}
 
 .otter pre {
     font-family: monospace;
@@ -51,6 +55,16 @@ div.fish {
     font-size: .75vw;
     padding: 1rem;
     background-color: black;
+}
+
+a.fish-tank {
+    border: 2px lime dotted;
+    text-decoration: none; /* Hides the link underline */
+    cursor: pointer;       /* Shows a pointer on hover */
+}
+
+a.fish-tank:visited {
+    text-decoration: none;
 }
 
 span.fish {
