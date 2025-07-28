@@ -16,7 +16,20 @@ pre, p {
     font-family: monospace;
 }
 
-.energy {
+span.energy {
     background-color: lime;
 }
 
+div.fish {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-size: .25rem;
+    padding: 1rem;
+    border: 1px dotted lime;
+}
+
+.fish {
+    color: lime;
+    background-color: black;
+}
