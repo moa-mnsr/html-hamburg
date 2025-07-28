@@ -3,11 +3,14 @@
 }
 
 body {
+  margin: 0;
     background-color: whitesmoke;
     text-align: center;
 }
 
-
+.page-container {
+  margin: 10vw;
+}
 
 div.info-box {
     border: solid 1px black;
@@ -15,7 +18,7 @@ div.info-box {
 }
 
 .weather {
-    font-size: 1rem;
+    font-size: 5vw;
         font-family: monospace;
 
 
@@ -26,8 +29,14 @@ main {
     justify-content: space-around;
 }
 
+section {
+    margin: 6vw 0;
+}
+
 h1 {
-  font-size: clamp(28px, 8vw, 48px);}
+  font-size: clamp(28px, 8vw, 48px);
+  margin: 3.5rem 0;
+}
 
   h2 {
         font-size: clamp(24px, 6vw, 38px);
@@ -55,10 +64,11 @@ div.fish {
     font-size: .75vw;
     padding: 1rem;
     background-color: black;
+     border: 2px lime dotted;
 }
 
 a.fish-tank {
-    border: 2px lime dotted;
+   
     text-decoration: none; /* Hides the link underline */
     cursor: pointer;       /* Shows a pointer on hover */
 }
