@@ -9,7 +9,7 @@ body {
 }
 
 .page-container {
-  margin: 10vw;
+  margin: clamp(1rem, 10vh, 4rem) 10vw;
 }
 
 div.info-box {
@@ -30,12 +30,13 @@ main {
 }
 
 section {
-    margin: 6vw 0;
+    margin: 5vh 0;
 }
 
 h1 {
   font-size: clamp(28px, 8vw, 48px);
-  margin: 3.5rem 0;
+  margin-top: clamp(1rem, 3vh, 4rem);
+  margin-bottom: clamp(3rem, 2vh, 1.5rem);
 }
 
   h2 {
@@ -50,8 +51,9 @@ h1 {
 .otter pre {
     font-family: monospace;
     /* This is the change: font-size now scales with the viewport width */
-    font-size: 1vw;
+    font-size: 1.5vh;
     text-align: center;
+    margin-top: clamp(1rem, 3vh, 2rem)
 }
 
 span.energy {
