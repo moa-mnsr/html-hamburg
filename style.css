@@ -10,8 +10,8 @@ html, body {
 
 
 .page-container {
-    margin: clamp(1rem, 10vh, 4rem) clamp(5vw, 10vw, 10vw);
-}
+    margin: clamp(1rem, 10vh, 4rem) 10vw;    
+  }
 
 div.info-box {
     border: solid 1px black;
@@ -74,6 +74,15 @@ div.fish {
     padding: 1rem;
     background-color: black;
     border: 2px lime dotted;
+    overflow: hidden; /* clips anything that goes outside */
+    width: 100%;
+}
+
+div.fish pre {
+    white-space: pre;
+    overflow: hidden; /* clips the ASCII if it's too wide */
+    width: 100%;
+    margin: 0; /* remove any default margins */
 }
 
 a.fish-tank {
@@ -88,5 +97,4 @@ a.fish-tank:visited {
 
 span.fish {
     color: lime;
-
 }
