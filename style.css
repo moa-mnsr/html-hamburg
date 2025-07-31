@@ -68,6 +68,9 @@ span.energy {
     background-color: lime;
 }
 
+span.new {
+    background-color: yellow;
+}
 div.fish {
     text-align: center;
     font-size: clamp(0.2rem, 0.75vw, 0.4rem);
