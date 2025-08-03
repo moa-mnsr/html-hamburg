@@ -16,7 +16,10 @@ html, body {
 div.info-box {
     border: solid 1px black;
     padding: 2rem;
+   
 }
+
+
 
 .weather {
     font-size: 5vw;
